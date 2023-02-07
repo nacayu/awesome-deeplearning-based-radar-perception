@@ -7,7 +7,7 @@ It mainly includes radar-related multi-mode detection, segmentation, tracking, f
 
 ## Recent Papers List
 
-| paper                                        | task                  | 传感器             | 源码地址                               | 中文解读                                    | remarks                                                  |
+| <span style="white-space:nowrap;">paper&emsp;&emsp;&emsp;&emsp;&emsp;</span> | task                  | sensors             | github link                              | 中文解读                                    | remarks                                                  |
 | :----------------------------------------------------------- | :------------------------------ | ------------------ | :----------------------------------------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
 | MmWave Radar and Vision Fusion for Object Detection in Autonomous Driving: A Review | summary                         | radar&camera       |                                                  |                                                              | 自动驾驶中radar相关的多传感器融合summary                     |
 | Towards Deep Radar Perception for Autonomous Driving: Datasets, Methods, and Challenges | summary                         | radar              |                                                  |                                                              | 面向自动驾驶的深度雷达感知:数据集、方法和挑战summary         |
