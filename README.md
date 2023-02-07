@@ -5,7 +5,7 @@ It mainly includes radar-related multi-mode detection, segmentation, tracking, f
 
 ---
 
-## Recent Papers on millimeter-wave radar & Papers on multimode fusion
+## Recent Papers List
 
 | paper                                        | task                  | 传感器             | 源码地址                               | 中文解读                                    | remarks                                                  |
 | :----------------------------------------------------------- | :------------------------------ | ------------------ | :----------------------------------------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
