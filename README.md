@@ -16,8 +16,11 @@
 - [🗺️ 分割 (Segmentation)](#3-分割-segmentation)
 - [📏 深度估计 (Depth Estimation)](#4-深度估计-depth-estimation)
 - [🔄 跟踪 (Tracking)](#5-跟踪-tracking)
-- [📊 数据集 (Datasets)](#6-数据集-datasets)
-- [🔧 工具 (Tools)](#7-工具-tools)
+- [🌐 世界模型 (World Models)](#6-世界模型-world-models)
+- [🎨 3DGS/4DGS](#7-3dgs4dgs)
+- [🤖 VLA (Vision-Language-Action)](#8-vla-vision-language-action)
+- [📊 数据集 (Datasets)](#9-数据集-datasets)
+- [🔧 工具 (Tools)](#10-工具-tools)
 
 ---
 
@@ -36,6 +39,9 @@
 
 | 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2025 | [TransRAD: Retentive Vision Transformer for Enhanced Radar Object Detection](https://arxiv.org/abs/2501.10804) | 3D检测 | - | - | 保留视觉Transformer |
+| 2025 | [SpikingRTNH: Spiking Neural Network for 4D Radar Object Detection](https://arxiv.org/abs/2501.12417) | 3D检测 | - | - | 脉冲神经网络 |
+| 2024 | [RadarNeXt: Real-Time and Reliable 3D Object Detector Based On 4D mmWave Imaging Radar](https://arxiv.org/abs/2501.00406) | 3D检测 | - | - | 实时可靠检测器 |
 | 2021 | [Radar-PointGNN: Graph Based Object Recognition for Unstructured Radar Point-cloud Data](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/549641548) | 基于GNN |
 | 2019 | [2D Car Detection in Radar Data with PointNets](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | 改进PointNets |
 | 2021 | [Improved Orientation Estimation and Detection with Hybrid Object Detection Networks for Automotive Radar](https://arxiv.org/) | BEV 2D检测 | - | - | 结合网格和点方法 |
@@ -44,6 +50,18 @@
 
 | 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026 | [RadarXFormer: Robust Object Detection via Cross-Dimension Fusion of 4D Radar Spectra and Images](https://arxiv.org/abs/2603.06298) | 3D检测 | - | - | 跨维度融合 |
+| 2026 | [Boosting Instance Awareness via Cross-View Correlation with 4D Radar and Camera](https://arxiv.org/abs/2602.08374) | 3D检测 | - | - | 实例感知增强 |
+| 2026 | [Instance-Guided Radar Depth Estimation for 3D Object Detection](https://arxiv.org/abs/2601.10109) | 3D检测 | - | - | 实例引导深度估计 |
+| 2026 | [Wavelet-based Multi-View Fusion of 4D Radar Tensor and Camera](https://arxiv.org/abs/2501.01448) | 3D检测 | - | - | 小波多视角融合 |
+| 2025 | [RadarMP: Motion Perception for 4D mmWave Radar in Autonomous Driving](https://arxiv.org/abs/2511.08420) | 3D检测 | - | - | 运动感知 |
+| 2025 | [All You Need for Object Detection: From Pixels, Points, and Prompts to Next-Gen Fusion and Multimodal LLMs](https://arxiv.org/abs/2510.10753) | 3D检测 | - | - | 多模态LLM融合 |
+| 2025 | [MLF-4DRCNet: Multi-Level Fusion with 4D Radar and Camera](https://arxiv.org/abs/2509.14853) | 3D检测 | - | - | 多级融合 |
+| 2025 | [SpaRC-AD: A Baseline for Radar-Camera Fusion in End-to-End Autonomous Driving](https://arxiv.org/abs/2508.03067) | 端到端 | - | - | 端到端融合基线 |
+| 2025 | [ZFusion: An Effective Fuser of Camera and 4D Radar](https://arxiv.org/abs/2504.03184) | 3D检测 | - | - | 有效融合器 |
+| 2025 | [Revisiting Radar Camera Alignment by Contrastive Learning](https://arxiv.org/abs/2504.02267) | 3D检测 | - | - | 对比学习对齐 |
+| 2025 | [HGSFusion: Radar-Camera Fusion with Hybrid Generation and Synchronization](https://arxiv.org/abs/2412.14459) | 3D检测 | - | - | 混合生成同步 |
+| 2025 | [Depth-aware Fusion Method based on Image and 4D Radar Spectrum](https://arxiv.org/abs/2502.10813) | 3D检测 | - | - | 深度感知融合 |
 | 2023 | [RADIANT: Radar-Image Association Network for 3D Object Detection](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/longyunf/radiant) | [知乎](https://zhuanlan.zhihu.com/p/597739906) | 雷达-图像关联网络 |
 | 2023 | [CRAFT: Camera-Radar 3D Object Detection with Spatio-Contextual Fusion Transformer](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/581055339) | 空间-语义信息互补 |
 | 2022 | [A frustum proposal-based 3D object detection network for multi-stage fusion in autonomous driving](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/brandesjj/centerfusionpp) | [知乎](https://zhuanlan.zhihu.com/p/603398636) | 基于CenterFusion改进 |
@@ -60,7 +78,18 @@
 
 | 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026 | [4D-CAAL: 4D Radar-Camera Calibration and Auto-Labeling](https://arxiv.org/abs/2601.02790) | 标定 | - | - | 自动标注 |
+| 2026 | [Doracamom: Joint 3D Detection and Occupancy Prediction with Multi-view 4D Radars and Cameras](https://arxiv.org/abs/2501.08266) | 检测+占用 | - | - | 全向感知 |
+| 2025 | [RQR3D: Reparametrizing the regression targets for BEV-based 3D object detection](https://arxiv.org/abs/2505.19451) | 3D检测 | - | - | 回归目标重参数化 |
+| 2025 | [Efficient On-Chip Implementation of 4D Radar-Based 3D Object Detection on Hailo-8L](https://arxiv.org/abs/2505.04499) | 3D检测 | - | - | 芯片实现 |
+| 2025 | [L2RDaS: Synthesizing 4D Radar Tensors for Model Generalization](https://arxiv.org/abs/2503.11449) | 数据增强 | - | - | 数据集扩展 |
 | 2022 | [K-Radar: 4D Radar Object Detection for Autonomous Driving](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/kaist-avelab/k-radar) | - | 4D雷达，各种天气条件 |
+
+### 2.4 雷达+3DGS检测
+
+| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2025 | [RaGS: Unleashing 3D Gaussian Splatting from 4D Radar and Monocular Cues for 3D Object Detection](https://arxiv.org/abs/2507.10076) | 3D检测 | - | - | 3DGS+4D雷达 |
 
 ---
 
@@ -71,7 +100,7 @@
 | 2022 | [A Simple Baseline for BEV Perception Without LiDAR](https://arxiv.org/) | BEV分割 | [GitHub](https://github.com/aharley/simple_bev) | [知乎](https://zhuanlan.zhihu.com/p/568160922) | 基于nuScenes |
 | 2021 | [RadSegNet: A Reliable Approach to Radar Camera Fusion](https://arxiv.org/) | 语义分割 | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | RADIATE数据集 |
 | 2021 | [NVRadarNet: Real-Time Radar Obstacle and Free Space Detection](https://arxiv.org/) | Freespace | - | [知乎](https://zhuanlan.zhihu.com/p/575385783) | 实时(1.5ms)BEV多任务 |
-| 2021 | [Radar Occupancy Prediction With Lidar Supervision](https://arxiv.com/) | Freespace | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | LiDAR监督生成 |
+| 2021 | [Radar Occupancy Prediction With Lidar Supervision](https://arxiv.org/) | Freespace | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | LiDAR监督生成 |
 | 2021 | [See Through Smoke: Robust Indoor Mapping with Low-cost mmWave Radar](https://arxiv.org/) | 稠密点云 | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | 室内建图 |
 
 ---
@@ -94,9 +123,53 @@
 
 ---
 
-## 6. 数据集 (Datasets)
+## 6. 世界模型 (World Models)
 
-### 6.1 传统毫米波雷达
+| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026 | [Video Generation Models as World Models: Efficient Paradigms, Architectures and Algorithms](https://arxiv.org/abs/2603.14125) | 世界模型 | - | - | 视频生成作为世界模型 |
+| 2026 | [Collision-Aware Vision-Language Learning for End-to-End Driving](https://arxiv.org/abs/2603.09746) | 端到端 | - | - | 碰撞感知VLM |
+| 2026 | [Toward Physically Consistent Driving Video World Models](https://arxiv.org/abs/2603.17249) | 世界模型 | - | - | 物理一致性 |
+| 2026 | [X-World: Controllable Ego-Centric Multi-Camera World Models](https://arxiv.org/abs/2603.08703) | 世界模型 | - | - | 多相机可控世界模型 |
+| 2026 | [DriveVLM-RL: Neuroscience-Inspired Reinforcement Learning with Vision-Language Models](https://arxiv.org/abs/2603.06328) | 强化学习 | - | - | 神经科学启发的RL |
+| 2026 | [VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs](https://arxiv.org/abs/2603.06820) | 世界模型 | - | - | 向量图扩散流 |
+| 2026 | [From Virtual Environments to Real-World Trials: Emerging Trends in Autonomous Driving](https://arxiv.org/abs/2603.04708) | 综述 | - | - | 虚拟到现实趋势 |
+
+---
+
+## 7. 3DGS/4DGS
+
+| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026 | [R-PGA: Robust Physical Adversarial Camouflage Generation via Relightable 3D Gaussian Splatting](https://arxiv.org/abs/2603.12798) | 对抗攻击 | - | - | 物理对抗 |
+| 2026 | [StreetForward: Perceiving Dynamic Street with Feedforward Causal Attention](https://arxiv.org/abs/2603.06357) | 动态场景 | - | - | 前馈因果注意力 |
+| 2026 | [Reconstruction Matters: Learning Geometry-Aligned BEV Representation through 3D Gaussian Splatting](https://arxiv.org/abs/2603.06223) | BEV表示 | - | - | 几何对齐BEV |
+| 2026 | [LiDAR-EVS: Enhance Extrapolated View Synthesis for 3D Gaussian Splatting](https://arxiv.org/abs/2603.05263) | 视图合成 | - | - | LiDAR监督 |
+| 2026 | [DynamicVGGT: Learning Dynamic Point Maps for 4D Scene Reconstruction](https://arxiv.org/abs/2603.04044) | 4D重建 | - | - | 动态点云图 |
+| 2026 | [ReconDrive: Fast Feed-Forward 4D Gaussian Splatting for Autonomous Driving](https://arxiv.org/abs/2603.03906) | 场景重建 | - | - | 前馈4DGS |
+| 2026 | [VG3S: Visual Geometry Grounded Gaussian Splatting for Semantic Occupancy Prediction](https://arxiv.org/abs/2603.05704) | 语义占用 | - | - | 几何 grounded |
+| 2026 | [Transforming Omnidirectional RGB-LiDAR data into 3D Gaussian Splatting](https://arxiv.org/abs/2603.05395) | 数据转换 | - | - | 全向数据转GS |
+| 2026 | [DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Rendering](https://arxiv.org/abs/2603.02789) | 重建+渲染 | - | - | 神经重建桥接 |
+
+---
+
+## 8. VLA (Vision-Language-Action)
+
+| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026 | [Understanding Behavior Cloning with Action Quantization](https://arxiv.org/abs/2603.05887) | 行为克隆 | - | - | 动作量化 |
+| 2026 | [Utonia: Toward One Encoder for All Point Clouds](https://arxiv.org/abs/2603.03438) | 点云编码 | - | - | 统一点云编码器 |
+| 2025 | [VLA-R: Vision-Language Action Retrieval toward Open-World End-to-End Autonomous Driving](https://arxiv.org/abs/2511.08497) | 端到端 | - | - | 开放世界VLA |
+| 2025 | [ADVEDM: Fine-grained Adversarial Attack against VLM-based Embodied Agents](https://arxiv.org/abs/2509.15768) | 对抗攻击 | - | - | VLM对抗攻击 |
+| 2025 | [TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models](https://arxiv.org/abs/2509.04637) | 机器人操作 | - | - | 力矩感知VLA |
+| 2025 | [Unified Vision-Language-Action Model](https://arxiv.org/abs/2506.13935) | 统一模型 | - | - | 统一VLA |
+| 2026 | [Out-of-Sight Embodied Agents: Multimodal Tracking, Sensor Fusion, and Trajectory Forecasting](https://arxiv.org/abs/2603.09719) | 多模态跟踪 | - | - | 具身智能体 |
+
+---
+
+## 9. 数据集 (Datasets)
+
+### 9.1 传统毫米波雷达
 
 | 数据集 | 传感器 | 场景 | 链接 | 备注 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -109,16 +182,17 @@
 | [Pointillism](https://github.com/Kshitizbansal/pointillism-multi-radar-data) | radar camera lidar | - | - | 多雷达数据 |
 | [Zendar](https://storage.googleapis.com/www.archive.zendar.io/dataset.html) | radar camera lidar | - | - | 支持tracking |
 
-### 6.2 4D雷达
+### 9.2 4D雷达
 
 | 数据集 | 传感器 | 场景 | 链接 | 备注 |
 | :--- | :--- | :--- | :--- | :--- |
 | [TJ4DRadSet](https://github.com/TJRadarLab/TJ4DRadSet) | radar camera lidar | 驾驶 | [博客](https://blog.csdn.net/u013019296/article/details/127219137) | 支持tracking |
 | [K-Radar](https://github.com/kaist-avelab/K-Radar) | camera lidar radar | 各种天气 | - | 4D tensor数据 |
+| [OmniHD-Scenes](https://arxiv.org/abs/2412.13274) | 多模态 | 下一代 | - | 多模态数据集 |
 
 ---
 
-## 7. 工具 (Tools)
+## 10. 工具 (Tools)
 
 ### 雷达数据处理
 
@@ -129,6 +203,7 @@
 
 ## 📝 更新日志
 
+- **2026-04-01**: 新增World Models、3DGS/4DGS、VLA三个类别，更新2023-2026年新论文
 - **2026-04-01**: 重构项目结构，按任务类型分类，增加目录导航
 - 原始项目: [awesome-deeplearning-based-radar-perception](https://github.com/nacayu/awesome-deeplearning-based-radar-perception)
 
