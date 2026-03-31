@@ -78,11 +78,11 @@
 
 | 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026 | [4D-CAAL: 4D Radar-Camera Calibration and Auto-Labeling](https://arxiv.org/abs/2601.02790) | 标定 | - | - | 自动标注 |
-| 2026 | [Doracamom: Joint 3D Detection and Occupancy Prediction with Multi-view 4D Radars and Cameras](https://arxiv.org/abs/2501.08266) | 检测+占用 | - | - | 全向感知 |
-| 2025 | [RQR3D: Reparametrizing the regression targets for BEV-based 3D object detection](https://arxiv.org/abs/2505.19451) | 3D检测 | - | - | 回归目标重参数化 |
-| 2025 | [Efficient On-Chip Implementation of 4D Radar-Based 3D Object Detection on Hailo-8L](https://arxiv.org/abs/2505.04499) | 3D检测 | - | - | 芯片实现 |
-| 2025 | [L2RDaS: Synthesizing 4D Radar Tensors for Model Generalization](https://arxiv.org/abs/2503.11449) | 数据增强 | - | - | 数据集扩展 |
+| 2026 | [4D-CAAL: 4D Radar-Camera Calibration and Auto-Labeling for Autonomous Driving](https://arxiv.org/abs/2601.21454) | 标定 | - | - | 自动标注 |
+| 2026 | [Doracamom: Joint 3D Detection and Occupancy Prediction with Multi-view 4D Radars and Cameras for Omnidirectional Perception](https://arxiv.org/abs/2501.15394) | 检测+占用 | - | - | 全向感知 |
+| 2025 | [RQR3D: Reparametrizing the regression targets for BEV-based 3D object detection](https://arxiv.org/abs/2505.17732) | 3D检测 | - | - | 回归目标重参数化 |
+| 2025 | [Efficient On-Chip Implementation of 4D Radar-Based 3D Object Detection on Hailo-8L](https://arxiv.org/abs/2505.00757) | 3D检测 | - | - | 芯片实现 |
+| 2025 | [L2RDaS: Synthesizing 4D Radar Tensors for Model Generalization via Dataset Expansion](https://arxiv.org/abs/2503.03637) | 数据增强 | - | - | 数据集扩展 |
 | 2022 | [K-Radar: 4D Radar Object Detection for Autonomous Driving](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/kaist-avelab/k-radar) | - | 4D雷达，各种天气条件 |
 
 ### 2.4 雷达+3DGS检测
