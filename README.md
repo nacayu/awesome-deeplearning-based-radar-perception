@@ -89,7 +89,7 @@
 
 | 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2025 | [RaGS: Unleashing 3D Gaussian Splatting from 4D Radar and Monocular Cues for 3D Object Detection](https://arxiv.org/abs/2507.10076) | 3D检测 | - | - | 3DGS+4D雷达 |
+| 2025 | [RaGS: Unleashing 3D Gaussian Splatting from 4D Radar and Monocular Cues for 3D Object Detection](https://arxiv.org/abs/2507.19856) | 3D检测 | - | - | 3DGS+4D雷达 |
 
 ---
 
