@@ -59,7 +59,7 @@
 | 2025 | [MLF-4DRCNet: Multi-Level Fusion with 4D Radar and Camera for 3D Object Detection in Autonomous Driving](https://arxiv.org/abs/2509.18613) | 3D检测 | - | - | [4D雷达] 多层级融合 |
 | 2025 | [SpaRC-AD: A Baseline for Radar-Camera Fusion in End-to-End Autonomous Driving](https://arxiv.org/abs/2508.10567) | 端到端 | - | - | [4D雷达] 端到端融合基线 |
 | 2025 | [Zfusion: An Effective Fuser of Camera and 4D Radar for 3D Object Perception in Autonomous Driving](https://arxiv.org/abs/2504.03438) | 3D检测 | - | - | [4D雷达] 有效融合器 |
-| 2025 | [Revisiting Radar Camera Alignment by Contrastive Learning](https://arxiv.org/abs/2504.02267) | 3D检测 | - | - | 对比学习对齐 |
+| 2025 | [Revisiting Radar Camera Alignment by Contrastive Learning for 3D Object Detection](https://arxiv.org/abs/2504.16368) | 3D检测 | - | - | 对比学习对齐 |
 | 2025 | [HGSFusion: Radar-Camera Fusion with Hybrid Generation and Synchronization for 3D Object Detection](https://arxiv.org/abs/2412.11489) | 3D检测 | - | - | [4D雷达] 混合生成同步融合 |
 | 2025 | [Depth-aware Fusion Method based on Image and 4D Radar Spectrum for 3D Object Detection](https://arxiv.org/abs/2502.15516) | 3D检测 | - | - | [4D雷达] 深度感知融合 |
 | 2023 | [RADIANT: Radar-Image Association Network for 3D Object Detection](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/longyunf/radiant) | [知乎](https://zhuanlan.zhihu.com/p/597739906) | 雷达-图像关联网络 |
@@ -160,9 +160,9 @@
 | 2026 | [Understanding Behavior Cloning with Action Quantization](https://arxiv.org/abs/2603.05887) | 行为克隆 | - | - | 动作量化 |
 | 2026 | [Utonia: Toward One Encoder for All Point Clouds](https://arxiv.org/abs/2603.03438) | 点云编码 | - | - | 统一点云编码器 |
 | 2025 | [VLA-R: Vision-Language Action Retrieval toward Open-World End-to-End Autonomous Driving](https://arxiv.org/abs/2511.12405) | 端到端 | - | - | [VLA] 开放世界端到端自动驾驶视觉语言动作检索 |
-| 2025 | [ADVEDM: Fine-grained Adversarial Attack against VLM-based Embodied Agents](https://arxiv.org/abs/2509.15768) | 对抗攻击 | - | - | VLM对抗攻击 |
-| 2025 | [TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models](https://arxiv.org/abs/2509.04637) | 机器人操作 | - | - | 力矩感知VLA |
-| 2025 | [Unified Vision-Language-Action Model](https://arxiv.org/abs/2506.13935) | 统一模型 | - | - | 统一VLA |
+| 2025 | [ADVEDM: Fine-grained Adversarial Attack against VLM-based Embodied Agents](https://arxiv.org/abs/2509.16645) | 对抗攻击 | - | - | VLM对抗攻击 |
+| 2025 | [TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models](https://arxiv.org/abs/2509.07962) | 机器人操作 | - | - | 力矩感知VLA |
+| 2025 | [Unified Vision-Language-Action Model](https://arxiv.org/abs/2403.19838) | 统一模型 | - | - | 统一VLA |
 | 2026 | [Out-of-Sight Embodied Agents: Multimodal Tracking, Sensor Fusion, and Trajectory Forecasting](https://arxiv.org/abs/2603.09719) | 多模态跟踪 | - | - | 具身智能体 |
 
 ---
@@ -188,7 +188,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [TJ4DRadSet](https://github.com/TJRadarLab/TJ4DRadSet) | radar camera lidar | 驾驶 | [博客](https://blog.csdn.net/u013019296/article/details/127219137) | 支持tracking |
 | [K-Radar](https://github.com/kaist-avelab/K-Radar) | camera lidar radar | 各种天气 | - | 4D tensor数据 |
-| [OmniHD-Scenes](https://arxiv.org/abs/2412.13274) | 多模态 | 下一代 | - | 多模态数据集 |
+| [OmniHD-Scenes](https://arxiv.org/abs/2412.10734) | 多模态 | 下一代 | - | 多模态数据集 |
 
 ---
 
