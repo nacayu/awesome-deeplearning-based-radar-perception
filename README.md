@@ -141,7 +141,7 @@
 
 | 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026 | [R-PGA: Robust Physical Adversarial Camouflage Generation via Relightable 3D Gaussian Splatting](https://arxiv.org/abs/2603.12798) | 对抗攻击 | - | - | 物理对抗 |
+| 2026 | [R-PGA: Robust Physical Adversarial Camouflage Generation via Relightable 3D Gaussian Splatting](https://arxiv.org/abs/2603.26067) | 对抗攻击 | - | - | [物理对抗] 利用可重光照3DGS生成鲁棒对抗纹理，抵御复杂动态场景 |
 | 2026 | [StreetForward: Perceiving Dynamic Street with Feedforward Causal Attention](https://arxiv.org/abs/2603.06357) | 动态场景 | - | - | 前馈因果注意力 |
 | 2026 | [Reconstruction Matters: Learning Geometry-Aligned BEV Representation through 3D Gaussian Splatting](https://arxiv.org/abs/2603.06223) | BEV表示 | - | - | 几何对齐BEV |
 | 2026 | [LiDAR-EVS: Enhance Extrapolated View Synthesis for 3D Gaussian Splatting](https://arxiv.org/abs/2603.05263) | 视图合成 | - | - | LiDAR监督 |
