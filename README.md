@@ -39,9 +39,9 @@
 
 | 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2025 | [TransRAD: Retentive Vision Transformer for Enhanced Radar Object Detection](https://arxiv.org/abs/2501.10804) | 3D检测 | - | - | 保留视觉Transformer |
-| 2025 | [SpikingRTNH: Spiking Neural Network for 4D Radar Object Detection](https://arxiv.org/abs/2501.12417) | 3D检测 | - | - | 脉冲神经网络 |
-| 2024 | [RadarNeXt: Real-Time and Reliable 3D Object Detector Based On 4D mmWave Imaging Radar](https://arxiv.org/abs/2501.00406) | 3D检测 | - | - | 实时可靠检测器 |
+| 2025 | [TransRAD: Retentive Vision Transformer for Enhanced Radar Object Detection](https://arxiv.org/abs/2501.17977) | 3D检测 | - | - | [4D雷达] 利用Retentive Vision Transformer改进雷达目标检测 |
+| 2025 | [SpikingRTNH: Spiking Neural Network for 4D Radar Object Detection](https://arxiv.org/abs/2502.00074) | 3D检测 | - | - | [4D雷达] 首个用于4D雷达目标检测的脉冲神经网络 |
+| 2024 | [RadarNeXt: Real-Time and Reliable 3D Object Detector Based On 4D mmWave Imaging Radar](https://arxiv.org/abs/2501.02314) | 3D检测 | [GitHub](https://github.com/Pay246-git468/RadarNeXt) | - | [4D雷达] 实时可靠的4D毫米波成像雷达3D目标检测器 |
 | 2021 | [Radar-PointGNN: Graph Based Object Recognition for Unstructured Radar Point-cloud Data](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/549641548) | 基于GNN |
 | 2019 | [2D Car Detection in Radar Data with PointNets](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | 改进PointNets |
 | 2021 | [Improved Orientation Estimation and Detection with Hybrid Object Detection Networks for Automotive Radar](https://arxiv.org/) | BEV 2D检测 | - | - | 结合网格和点方法 |
@@ -54,7 +54,7 @@
 | 2026 | [Boosting Instance Awareness via Cross-View Correlation with 4D Radar and Camera for 3D Object Detection](https://arxiv.org/abs/2602.20632) | 3D检测 | - | - | [4D雷达] 通过跨视角相关性增强实例感知 |
 | 2026 | [R4Det: 4D Radar-Camera Fusion for High-Performance 3D Object Detection](https://arxiv.org/abs/2603.09805) | 3D检测 | - | - | [4D雷达] 高性能4D雷达-相机融合3D检测 |
 | 2026 | [Wavelet-based Multi-View Fusion of 4D Radar Tensor and Camera](https://arxiv.org/abs/2501.01448) | 3D检测 | - | - | 小波多视角融合 |
-| 2025 | [RadarMP: Motion Perception for 4D mmWave Radar in Autonomous Driving](https://arxiv.org/abs/2511.08420) | 3D检测 | - | - | 运动感知 |
+| 2025 | [RadarMP: Motion Perception for 4D mmWave Radar in Autonomous Driving](https://arxiv.org/abs/2511.12117) | 3D检测 | - | - | [4D雷达] 4D毫米波雷达运动感知 |
 | 2025 | [All You Need for Object Detection: From Pixels, Points, and Prompts to Next-Gen Fusion and Multimodal LLMs](https://arxiv.org/abs/2510.10753) | 3D检测 | - | - | 多模态LLM融合 |
 | 2025 | [MLF-4DRCNet: Multi-Level Fusion with 4D Radar and Camera](https://arxiv.org/abs/2509.14853) | 3D检测 | - | - | 多级融合 |
 | 2025 | [SpaRC-AD: A Baseline for Radar-Camera Fusion in End-to-End Autonomous Driving](https://arxiv.org/abs/2508.03067) | 端到端 | - | - | 端到端融合基线 |
@@ -159,7 +159,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026 | [Understanding Behavior Cloning with Action Quantization](https://arxiv.org/abs/2603.05887) | 行为克隆 | - | - | 动作量化 |
 | 2026 | [Utonia: Toward One Encoder for All Point Clouds](https://arxiv.org/abs/2603.03438) | 点云编码 | - | - | 统一点云编码器 |
-| 2025 | [VLA-R: Vision-Language Action Retrieval toward Open-World End-to-End Autonomous Driving](https://arxiv.org/abs/2511.08497) | 端到端 | - | - | 开放世界VLA |
+| 2025 | [VLA-R: Vision-Language Action Retrieval toward Open-World End-to-End Autonomous Driving](https://arxiv.org/abs/2511.12405) | 端到端 | - | - | [VLA] 开放世界端到端自动驾驶视觉语言动作检索 |
 | 2025 | [ADVEDM: Fine-grained Adversarial Attack against VLM-based Embodied Agents](https://arxiv.org/abs/2509.15768) | 对抗攻击 | - | - | VLM对抗攻击 |
 | 2025 | [TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models](https://arxiv.org/abs/2509.04637) | 机器人操作 | - | - | 力矩感知VLA |
 | 2025 | [Unified Vision-Language-Action Model](https://arxiv.org/abs/2506.13935) | 统一模型 | - | - | 统一VLA |
