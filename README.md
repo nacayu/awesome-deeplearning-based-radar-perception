@@ -142,9 +142,9 @@
 | 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026 | [R-PGA: Robust Physical Adversarial Camouflage Generation via Relightable 3D Gaussian Splatting](https://arxiv.org/abs/2603.26067) | 对抗攻击 | - | - | [物理对抗] 利用可重光照3DGS生成鲁棒对抗纹理，抵御复杂动态场景 |
-| 2026 | [StreetForward: Perceiving Dynamic Street with Feedforward Causal Attention](https://arxiv.org/abs/2603.06357) | 动态场景 | - | - | 前馈因果注意力 |
+| 2026 | [StreetForward: Perceiving Dynamic Street with Feedforward Causal Attention](https://arxiv.org/abs/2603.19552) | 动态场景 | - | - | 前馈因果注意力 |
 | 2026 | [Reconstruction Matters: Learning Geometry-Aligned BEV Representation through 3D Gaussian Splatting](https://arxiv.org/abs/2603.06223) | BEV表示 | - | - | 几何对齐BEV |
-| 2026 | [LiDAR-EVS: Enhance Extrapolated View Synthesis for 3D Gaussian Splatting](https://arxiv.org/abs/2603.05263) | 视图合成 | - | - | LiDAR监督 |
+| 2026 | [LiDAR-EVS: Enhance Extrapolated View Synthesis for 3D Gaussian Splatting with Pseudo-LiDAR Supervision](https://arxiv.org/abs/2603.14763) | 视图合成 | - | - | LiDAR监督 |
 | 2026 | [DynamicVGGT: Learning Dynamic Point Maps for 4D Scene Reconstruction](https://arxiv.org/abs/2603.04044) | 4D重建 | - | - | 动态点云图 |
 | 2026 | [ReconDrive: Fast Feed-Forward 4D Gaussian Splatting for Autonomous Driving](https://arxiv.org/abs/2603.03906) | 场景重建 | - | - | 前馈4DGS |
 | 2026 | [VG3S: Visual Geometry Grounded Gaussian Splatting for Semantic Occupancy Prediction](https://arxiv.org/abs/2603.05704) | 语义占用 | - | - | 几何 grounded |
