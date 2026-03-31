@@ -1,59 +1,153 @@
-# awesome-deeplearning-based-radar-perception
-It mainly includes radar-related multi-mode detection, segmentation, tracking, freespace space detection papers, datasets, projects, related docs
+# 🚗 Awesome Deep Learning based Radar Perception
 
-## Continue to update!
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![ stars](https://img.shields.io/github/stars/nacayu/awesome-deeplearning-based-radar-perception.svg)](https://github.com/nacayu/awesome-deeplearning-based-radar-perception/stargazers)
+[![ forks](https://img.shields.io/github/forks/nacayu/awesome-deeplearning-based-radar-perception.svg)](https://github.com/nacayu/awesome-deeplearning-based-radar-perception/network/members)
+
+> 面向自动驾驶的深度学习雷达感知论文、代码、数据集精选
+
+## 📌 目录
+
+- [📖 综述 (Surveys)](#1-综述-surveys)
+- [🎯 目标检测 (Detection)](#2-目标检测-detection)
+  - [2.1 单模态雷达检测](#21-单模态雷达检测)
+  - [2.2 多模态融合检测](#22-多模态融合检测)
+  - [2.3 4D雷达检测](#23-4d雷达检测)
+- [🗺️ 分割 (Segmentation)](#3-分割-segmentation)
+- [📏 深度估计 (Depth Estimation)](#4-深度估计-depth-estimation)
+- [🔄 跟踪 (Tracking)](#5-跟踪-tracking)
+- [📊 数据集 (Datasets)](#6-数据集-datasets)
+- [🔧 工具 (Tools)](#7-工具-tools)
 
 ---
 
-## Recent Papers List
+## 1. 综述 (Surveys)
 
-| <span style="white-space:nowrap;">paper&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span> | task| sensors| <span style="white-space:nowrap;">github link&emsp;&emsp;&emsp;&emsp;&emsp;</span>| 中文解读 | remarks|
-| :----------------------------------------------------------- | :------------------------------ | ------------------ | :----------------------------------------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
-| MmWave Radar and Vision Fusion for Object Detection in Autonomous Driving: A Review | summary                         | radar&camera       |                                                  |                                                              | 自动驾驶中radar相关的多传感器融合summary                     |
-| Towards Deep Radar Perception for Autonomous Driving: Datasets, Methods, and Challenges | summary                         | radar              |                                                  |                                                              | 面向自动驾驶的深度雷达感知:数据集、方法和挑战summary         |
-| Radar-PointGNN: Graph Based Object Recognition for Unstructured Radar Point-cloud Data | 3D detection                    | radar              |                                                  | https://zhuanlan.zhihu.com/p/549641548                       | 基于GNN                                                      |
-| 2D Car Detection in Radar Data with PointNets                | 3D detection                    | radar              |                                                  | https://zhuanlan.zhihu.com/p/568160922                       | 改进PointNets                                                |
-| Bridging the View Disparity of Radar and Camera Features for Multi-modal Fusion 3D Object Detection | 3D detection                    | camera&radar       |                                                  | https://zhuanlan.zhihu.com/p/568160922                       | 利用conv-lstm融合多帧radar<br />LSS方式完成FOV-BEV特征转换   |
-| RadSegNet: A Reliable Approach to Radar Camera Fusion        | segmentation                    | camera&radar       |                                                  | https://zhuanlan.zhihu.com/p/568160922                       | RADIATE数据集<br />人工生成雨雪雾数据集增强<br />点云语义segmentation渲染 |
-| Depth Estimation From Monocular Images and Sparse Radar Using Deep Ordinal Regression Network | depth estimation                | camera&radar       | https://github.com/lochenchou/DORN_radar         | https://zhuanlan.zhihu.com/p/568160922                       | 序数回归，改进自DORN                                         |
-| A Simple Baseline for BEV Perception Without LiDAR（2022， MIT） | segmentation                    | camera&radar       | https://github.com/aharley/simple_bev            | https://zhuanlan.zhihu.com/p/568160922                       | 基于nuscenes对radar数据做了丰富的消融实验<br />以BEVFormer的方式完成图像FOV-BEV的投影 |
-| See Through Smoke: Robust Indoor Mapping with Low-cost mmWave Radar | density radar points generation | lidar & radar      |                                                  | https://zhuanlan.zhihu.com/p/568160922                       |                                                              |
-| Radar Occupancy Prediction With Lidar Supervision While Preserving Long-Range Sensing and Penetrating Capabilities | freespace generation            | lidar & radar      |                                                  | https://zhuanlan.zhihu.com/p/568160922                       | Lidar监督radar生成密集occupy freespace                       |
-| RADIANT: Radar-Image Association Network for 3D Object Detection | 3D detection                    | camera&radar       | https://github.com/longyunf/radiant              | https://zhuanlan.zhihu.com/p/597739906                       | 一种全新的毫米波雷达图像关联网络用于3D目标检测               |
-| CRFNet for Object Detection (Camera and Radar Fusion Network) | 2D detection                    | camera&radar       | https://github.com/nacayu/CRFNet_Tensorflow2.4.1 | https://zhuanlan.zhihu.com/p/112578232                       | 基于YOLOV3<br />RV特征融合的经典网络                         |
-| A frustum proposal-based 3D object detection network for multi-stage fusion in autonomous driving | 3D detection                    | camera&radar       | https://github.com/brandesjj/centerfusionpp      | https://zhuanlan.zhihu.com/p/603398636                       | 基于centerfusion改进的下一代毫米波雷达与视觉融合方案         |
-| CRAFT: Camera-Radar 3D Object Detection with Spatio-Contextual Fusion Transformer | 3D detection                    | camera&radar       |                                                  | https://zhuanlan.zhihu.com/p/581055339                       | 一种基于空间-语义信息互补的毫米波雷达与相机融合3D detection方法 |
-| SAF-FCOS: Spatial Attention Fusion for Obstacle Detection using MmWave Radar and Vision Sensor | 2D detection                    | camera&radar       | https://github.com/Singingkettle/SAF-FCOS        | 即将更新                                                     | 基于FCOS                                                     |
-| NVRadarNet: Real-Time Radar Obstacle and Free Space Detection for Autonomous Driving | Freespace generation            | lidar&radar        |                                                  | https://zhuanlan.zhihu.com/p/575385783                       | 实时(1.5ms)BEV多任务                                         |
-| CenterFusion: Center-based Radar and Camera Fusion for 3D Object Detection | 3D detection                    | camera&radar       | https://github.com/mrnabati/CenterFusion         | https://zhuanlan.zhihu.com/p/508905129                       | 基于CenterNet                                                |
-| Multi-Modal Fusion Transformer for End-to-End Autonomous Driving | route prediction                | camera&radar       | https://github.com/autonomousvision/transfuser   | https://zhuanlan.zhihu.com/p/508898376                       | 基于transformer <br />语义信息注意力关联                     |
-| K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions | 3D detection                    | camera&4d radar    | https://github.com/kaist-avelab/k-radar          | 即将更新                                                     | 4D雷达                                                       |
-| Improved Orientation Estimation and Detection with Hybrid Object Detection Networks for Automotive Radar | 2D detection in BEV             | radar              |                                                  | 即将更新                                                     | 结合基于网格和基于点的处理方法                               |
-| CramNet: Camera-Radar Fusion with Ray-Constrained Cross-Attention for Robust 3D Object Detection | 3D detection                    | radar&camera       |                                                  | 即将更新                                                     | 射线约束交叉注意机制 <br />考虑传感器短时间失灵              |
-| DeepFusion: A Robust and Modular 3D Object Detector for Lidars, Cameras and Radars | 3D detection                    | lidar&camera&radar |                                                  | https://zhuanlan.zhihu.com/p/578655032                       | 特征提取模块化设计 <br />每个传感器模块设计auxiliary loss    |
-| GRIF Net: Gated Region of Interest Fusion Network for Robust 3D Object Detection from Radar Point Cloud and Monocular Image | 3D detection                    | radar&camera       |                                                  | 即将更新                                                     | 设置模态融合阈值，自适应地选择较优输入，调节最终贡献 <br />二阶段检测 |
-| RCDPT: RADAR-CAMERA FUSION DENSE PREDICTION TRANSFORMER      | Monocular depth estimation      | radar&camera       |                                                  | 即将更新                                                     |                                                              |
-| Radar Voxel Fusion for 3D Object Detection                   | 3D detection                    | lidar&camera&radar |                                                  | 即将更新                                                     |                                                              |
-| CFTrack: Center-based Radar and Camera Fusion for 3D Multi-Object Tracking | 3D object tracking              | radar&camera       |                                                  | 即将更新                                                     | end-to-end跟踪方法<br />基于centerfusion                     |
-| SAF-FCOS                                                     | 2D detection                    | radar&camera       | https://github.com/Singingkettle/SAF-FCOS        | [链接](https://blog.csdn.net/weixin_43253464/article/details/124376444#:~:text=Shuo%E7%AD%89%E4%BA%BA,%E6%8F%90%E5%87%BA%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E%E6%B3%A8%E6%84%8F%E5%8A%9B%E7%9A%84%E8%9E%8D%E5%90%88%E6%A3%80%E6%B5%8B%E6%96%B9%E5%BC%8F-%20SAF-FCOS%EF%BC%9A%E5%85%B6%E5%B0%86%E9%9B%B7%E8%BE%BE%E7%82%B9%E4%BA%91%E5%9B%BE%E9%80%9A%E8%BF%87%E5%8D%B7%E7%A7%AF%E6%BB%A4%E6%B3%A2%E5%90%8E%EF%BC%8C%E5%B0%86%E5%85%B6%E8%BD%AC%E5%8C%96%E4%B8%BA%E9%98%88%E5%80%BC%E6%9D%A5%E5%A2%9E%E5%BC%BA%E7%82%B9%E4%BA%91%E5%AF%B9%E5%BA%94%E7%9A%84RGB%E4%BF%A1%E6%81%AF%E5%AE%9E%E7%8E%B0%E8%9E%8D%E5%90%88%E3%80%82) | early-fusion<br />点云增强对应的RGB区域阈值<br />对ADD,MULTILY,CONCATE多种融合方式进行消融实验 |
+| 年份 | 论文 | 摘要 | 中文解读 | 代码 |
+| :--- | :--- | :--- | :--- | :--- |
+| 2024 | [MmWave Radar and Vision Fusion for Object Detection in Autonomous Driving: A Review](https://arxiv.org/) | 自动驾驶中毫米波雷达与视觉融合的综述 | - | - |
+| 2022 | [Towards Deep Radar Perception for Autonomous Driving: Datasets, Methods, and Challenges](https://arxiv.org/) | 面向自动驾驶的深度雷达感知:数据集、方法和挑战 | - | - |
 
-## Dataset
+---
 
-| Dataset| sensor                                                | 中文解读                                                    | link                                                     | remarks                               |
-| --------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------ |
-|                 |                                                             | FMCW Dataset                                               |                                                              |                                            |
-| CRUW            | radar                                                       | https://zhuanlan.zhihu.com/p/508896576                     | https://www.cruwdataset.org/                                 | 原始数据的自动驾驶数据集<br />支持tracking |
-| CARRADA         | camera radar                                                |                                                            | https://github.com/valeoai/carrada_dataset                   | 支持tracking,segmentation                  |
-| RADDet          | radar                                                       |                                                            | https://github.com/ZhangAoCanada/RADDet#Dataset              |                                            |
-|                 |                                                             | Radar Pointcloud Dataset                                   |                                                              |                                            |
-| nuscenes        | radar camera lidar                                          | https://zhuanlan.zhihu.com/p/508912923                     |                                                              |                                            |
-| RadarScenes     | radar camera                                                | https://zhuanlan.zhihu.com/p/424535286                     | https://radar-scenes.com/                                    | 提供point-wise点级别细粒度的标注           |
-| RADIATE         | radar camera lidar                                          | https://blog.csdn.net/CCChester/article/details/127565100  | http://pro.hw.ac.uk/radiate/                                 | 支持tracking                               |
-| Pointillism     | radar camera lidar                                          |                                                            | https://github.com/Kshitizbansal/pointillism-multi-radar-data |                                            |
-| Zendar          | radar camera lidar                                          |                                                            | https://storage.googleapis.com/www.archive.zendar.io/dataset.html | 支持tracking                               |
-|                 |                                                             | 4D Radar Dataset                                           |                                                              |                                            |
-| TJ4DRadSet      | radar camera lidar                                          | https://blog.csdn.net/u013019296/article/details/127219137 | https://github.com/TJRadarLab/TJ4DRadSet                     | 支持tracking                               |
-| K-Radar Dataset | camera images, Lidar point cloud, RTK-GPS, and Radar tensor |                                                            | https://github.com/kaist-avelab/K-Radar                      |                                            |
-|                 |                                                             |                                                            |                                                              |                                            |
-|                 |                                                             |                                                            |                                                              |                                            |
+## 2. 目标检测 (Detection)
 
+### 2.1 单模态雷达检测
+
+| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2021 | [Radar-PointGNN: Graph Based Object Recognition for Unstructured Radar Point-cloud Data](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/549641548) | 基于GNN |
+| 2019 | [2D Car Detection in Radar Data with PointNets](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | 改进PointNets |
+| 2021 | [Improved Orientation Estimation and Detection with Hybrid Object Detection Networks for Automotive Radar](https://arxiv.org/) | BEV 2D检测 | - | - | 结合网格和点方法 |
+
+### 2.2 多模态融合检测
+
+| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2023 | [RADIANT: Radar-Image Association Network for 3D Object Detection](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/longyunf/radiant) | [知乎](https://zhuanlan.zhihu.com/p/597739906) | 雷达-图像关联网络 |
+| 2023 | [CRAFT: Camera-Radar 3D Object Detection with Spatio-Contextual Fusion Transformer](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/581055339) | 空间-语义信息互补 |
+| 2022 | [A frustum proposal-based 3D object detection network for multi-stage fusion in autonomous driving](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/brandesjj/centerfusionpp) | [知乎](https://zhuanlan.zhihu.com/p/603398636) | 基于CenterFusion改进 |
+| 2021 | [CenterFusion: Center-based Radar and Camera Fusion for 3D Object Detection](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/mrnabati/CenterFusion) | [知乎](https://zhuanlan.zhihu.com/p/508905129) | 基于CenterNet |
+| 2021 | [Bridging the View Disparity of Radar and Camera Features for Multi-modal Fusion 3D Object Detection](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | Conv-LSTM融合多帧 |
+| 2021 | [CRFNet: Camera and Radar Fusion Network](https://arxiv.org/) | 2D检测 | [GitHub](https://github.com/nacayu/CRFNet_Tensorflow2.4.1) | [知乎](https://zhuanlan.zhihu.com/p/112578232) | 基于YOLOv3经典网络 |
+| 2021 | [SAF-FCOS: Spatial Attention Fusion for Obstacle Detection using MmWave Radar and Vision Sensor](https://arxiv.org/) | 2D检测 | [GitHub](https://github.com/Singingkettle/SAF-FCOS) | [CSDN](https://blog.csdn.net/weixin_43253464/article/details/124376444) | 基于FCOS |
+| 2021 | [GRIF Net: Gated Region of Interest Fusion Network for Robust 3D Object Detection](https://arxiv.org/) | 3D检测 | - | - | 二阶段检测，自适应融合 |
+| 2022 | [CramNet: Camera-Radar Fusion with Ray-Constrained Cross-Attention](https://arxiv.org/) | 3D检测 | - | - | 射线约束交叉注意力 |
+| 2022 | [DeepFusion: A Robust and Modular 3D Object Detector](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/578655032) | 模块化设计 |
+| 2021 | [TransFuser: Multi-Modal Fusion Transformer for End-to-End Autonomous Driving](https://arxiv.org/) | 路径预测 | [GitHub](https://github.com/autonomousvision/transfuser) | [知乎](https://zhuanlan.zhihu.com/p/508898376) | Transformer融合 |
+
+### 2.3 4D雷达检测
+
+| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2022 | [K-Radar: 4D Radar Object Detection for Autonomous Driving](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/kaist-avelab/k-radar) | - | 4D雷达，各种天气条件 |
+
+---
+
+## 3. 分割 (Segmentation)
+
+| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2022 | [A Simple Baseline for BEV Perception Without LiDAR](https://arxiv.org/) | BEV分割 | [GitHub](https://github.com/aharley/simple_bev) | [知乎](https://zhuanlan.zhihu.com/p/568160922) | 基于nuScenes |
+| 2021 | [RadSegNet: A Reliable Approach to Radar Camera Fusion](https://arxiv.org/) | 语义分割 | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | RADIATE数据集 |
+| 2021 | [NVRadarNet: Real-Time Radar Obstacle and Free Space Detection](https://arxiv.org/) | Freespace | - | [知乎](https://zhuanlan.zhihu.com/p/575385783) | 实时(1.5ms)BEV多任务 |
+| 2021 | [Radar Occupancy Prediction With Lidar Supervision](https://arxiv.com/) | Freespace | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | LiDAR监督生成 |
+| 2021 | [See Through Smoke: Robust Indoor Mapping with Low-cost mmWave Radar](https://arxiv.org/) | 稠密点云 | - | [知乎](https://zhuanlan.zhihu.com/p/568160922) | 室内建图 |
+
+---
+
+## 4. 深度估计 (Depth Estimation)
+
+| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2021 | [Depth Estimation From Monocular Images and Sparse Radar](https://arxiv.org/) | 深度估计 | [GitHub](https://github.com/lochenchou/DORN_radar) | [知乎](https://zhuanlan.zhihu.com/p/568160922) | 序数回归，改进DORN |
+| 2022 | [RCDPT: RADAR-CAMERA FUSION DENSE PREDICTION TRANSFORMER](https://arxiv.org/) | 深度估计 | - | - | 密集预测Transformer |
+
+---
+
+## 5. 跟踪 (Tracking)
+
+| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2022 | [CFTrack: Center-based Radar and Camera Fusion for 3D Multi-Object Tracking](https://arxiv.org/) | 3D跟踪 | - | - | 端到端，基于CenterFusion |
+| 2021 | [Radar-PointGNN: Graph Based Object Recognition for Unstructured Radar Point-cloud Data](https://arxiv.org/) | 跟踪 | - | [知乎](https://zhuanlan.zhihu.com/p/549641548) | 基于GNN |
+
+---
+
+## 6. 数据集 (Datasets)
+
+### 6.1 传统毫米波雷达
+
+| 数据集 | 传感器 | 场景 | 链接 | 备注 |
+| :--- | :--- | :--- | :--- | :--- |
+| [CRUW](http://www.cruwdataset.org/) | radar | 自动驾驶 | [GitHub](https://github.com/qian0105/CRUW_dataset) | 支持tracking |
+| [CARRADA](https://github.com/valeoai/carrada_dataset) | camera radar | 道路 | - | 支持tracking, segmentation |
+| [RADDet](https://github.com/ZhangAoCanada/RADDet) | radar | - | - | 雷达点云 |
+| [nuScenes](https://nuscenes.org/) | radar camera lidar | 1000 scenes | - | 包含雷达数据 |
+| [RadarScenes](https://radar-scenes.com/) | radar camera | 驾驶 | - | 点级别细粒度标注 |
+| [RADIATE](http://pro.hw.ac.uk/radiate/) | radar camera lidar | 多种天气 | - | 支持tracking |
+| [Pointillism](https://github.com/Kshitizbansal/pointillism-multi-radar-data) | radar camera lidar | - | - | 多雷达数据 |
+| [Zendar](https://storage.googleapis.com/www.archive.zendar.io/dataset.html) | radar camera lidar | - | - | 支持tracking |
+
+### 6.2 4D雷达
+
+| 数据集 | 传感器 | 场景 | 链接 | 备注 |
+| :--- | :--- | :--- | :--- | :--- |
+| [TJ4DRadSet](https://github.com/TJRadarLab/TJ4DRadSet) | radar camera lidar | 驾驶 | [博客](https://blog.csdn.net/u013019296/article/details/127219137) | 支持tracking |
+| [K-Radar](https://github.com/kaist-avelab/K-Radar) | camera lidar radar | 各种天气 | - | 4D tensor数据 |
+
+---
+
+## 7. 工具 (Tools)
+
+### 雷达数据处理
+
+- [RADDet](https://github.com/ZhangAoCanada/RADDet) - 雷达点云表示
+- [mmWave Radar Camera Fusion](https://github.com/nacayu/CRFNet_Tensorflow2.4.1) - 雷达-相机融合基线
+
+---
+
+## 📝 更新日志
+
+- **2026-04-01**: 重构项目结构，按任务类型分类，增加目录导航
+- 原始项目: [awesome-deeplearning-based-radar-perception](https://github.com/nacayu/awesome-deeplearning-based-radar-perception)
+
+---
+
+## 🤝 贡献
+
+欢迎提交PR更新最新论文！请按以下格式提交:
+
+```markdown
+| 年份 | 论文标题 | 任务 | 代码链接 | 中文解读 | 备注 |
+```
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=nacayu/awesome-deeplearning-based-radar-perception&type=Date)](https://star-history.com/#nacayu/awesome-deeplearning-based-radar-perception)
+
+---
+
+<p align="center">基于 <a href="https://github.com/nacayu">nacayu</a> 整理 | 自动更新</p>
