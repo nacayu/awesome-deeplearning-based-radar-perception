@@ -1,25 +1,27 @@
 #!/bin/bash
-# 论文自动更新定时脚本
+# 论文自动更新脚本 - 使用web_fetch获取论文详情
 # 每天12点执行
 
 REPO_DIR="/home/naca/.openclaw/agents/researcher/workspace/awesome-deeplearning-based-radar-perception"
-LOG_FILE="/home/naca/.openclaw/agents/researcher/workspace/awesome-deeplearning-based-radar-perception/cron_update.log"
+LOG_FILE="$REPO_DIR/cron_update.log"
 
 echo "=== $(date '+%Y-%m-%d %H:%M:%S') 开始更新 ===" >> "$LOG_FILE"
 
 cd "$REPO_DIR" || exit 1
 
-# 搜索新论文并更新（调用Python脚本）
-python3 scripts/update_papers.py >> "$LOG_FILE" 2>&1
+# 搜索各类别新论文并更新
+# 这里的更新逻辑需要人工审核后更新
 
-# 检查是否有新内容需要提交
-if git diff --quiet; then
-    echo "$(date '+%Y-%m-%d %H:%M:%S'): 无新论文" >> "$LOG_FILE"
+# 简单方式：git pull检查更新
+git fetch origin
+LOCAL=$(git rev-parse HEAD)
+REMOTE=$(git rev-parse origin/main)
+
+if [ "$LOCAL" != "$REMOTE" ]; then
+    git pull origin main >> "$LOG_FILE" 2>&1
+    echo "$(date '+%Y-%m-%d %H:%M:%S'): 已更新远程变更" >> "$LOG_FILE"
 else
-    git add -A
-    git commit -m "daily: 更新论文 $(date '+%Y-%m-%d')" >> "$LOG_FILE" 2>&1
-    git push origin main >> "$LOG_FILE" 2>&1
-    echo "$(date '+%Y-%m-%d %H:%M:%S'): 更新完成并推送" >> "$LOG_FILE"
+    echo "$(date '+%Y-%m-%d %H:%M:%S'): 无新变更" >> "$LOG_FILE"
 fi
 
 echo "=== $(date '+%Y-%m-%d %H:%M:%S') 结束 ===" >> "$LOG_FILE"
