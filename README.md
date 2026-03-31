@@ -53,7 +53,7 @@
 | 2026 | [RadarXFormer: Robust Object Detection via Cross-Dimension Fusion of 4D Radar Spectra and Images for Autonomous Driving](https://arxiv.org/abs/2603.14822) | 3D检测 | - | - | [4D雷达] 跨维度融合4D雷达频谱与图像的鲁棒3D目标检测 |
 | 2026 | [Boosting Instance Awareness via Cross-View Correlation with 4D Radar and Camera for 3D Object Detection](https://arxiv.org/abs/2602.20632) | 3D检测 | - | - | [4D雷达] 通过跨视角相关性增强实例感知 |
 | 2026 | [R4Det: 4D Radar-Camera Fusion for High-Performance 3D Object Detection](https://arxiv.org/abs/2603.09805) | 3D检测 | - | - | [4D雷达] 高性能4D雷达-相机融合3D检测 |
-| 2026 | [Wavelet-based Multi-View Fusion of 4D Radar Tensor and Camera](https://arxiv.org/abs/2501.01448) | 3D检测 | - | - | 小波多视角融合 |
+| 2026 | [Wavelet-based Multi-View Fusion of 4D Radar Tensor and Camera for Robust 3D Object Detection](https://arxiv.org/abs/2512.22972) | 3D检测 | - | - | [4D雷达] 基于小波的多视角融合 |
 | 2025 | [RadarMP: Motion Perception for 4D mmWave Radar in Autonomous Driving](https://arxiv.org/abs/2511.12117) | 3D检测 | - | - | [4D雷达] 4D毫米波雷达运动感知 |
 | 2025 | [All You Need for Object Detection: From Pixels, Points, and Prompts to Next-Gen Fusion and Multimodal LLMs](https://arxiv.org/abs/2510.10753) | 3D检测 | - | - | 多模态LLM融合 |
 | 2025 | [MLF-4DRCNet: Multi-Level Fusion with 4D Radar and Camera](https://arxiv.org/abs/2509.14853) | 3D检测 | - | - | 多级融合 |
