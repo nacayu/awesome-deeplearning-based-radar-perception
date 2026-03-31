@@ -56,12 +56,12 @@
 | 2026 | [Wavelet-based Multi-View Fusion of 4D Radar Tensor and Camera for Robust 3D Object Detection](https://arxiv.org/abs/2512.22972) | 3D检测 | - | - | [4D雷达] 基于小波的多视角融合 |
 | 2025 | [RadarMP: Motion Perception for 4D mmWave Radar in Autonomous Driving](https://arxiv.org/abs/2511.12117) | 3D检测 | - | - | [4D雷达] 4D毫米波雷达运动感知 |
 | 2025 | [All You Need for Object Detection: From Pixels, Points, and Prompts to Next-Gen Fusion and Multimodal LLMs](https://arxiv.org/abs/2510.10753) | 3D检测 | - | - | 多模态LLM融合 |
-| 2025 | [MLF-4DRCNet: Multi-Level Fusion with 4D Radar and Camera](https://arxiv.org/abs/2509.14853) | 3D检测 | - | - | 多级融合 |
-| 2025 | [SpaRC-AD: A Baseline for Radar-Camera Fusion in End-to-End Autonomous Driving](https://arxiv.org/abs/2508.03067) | 端到端 | - | - | 端到端融合基线 |
+| 2025 | [MLF-4DRCNet: Multi-Level Fusion with 4D Radar and Camera for 3D Object Detection in Autonomous Driving](https://arxiv.org/abs/2509.18613) | 3D检测 | - | - | [4D雷达] 多层级融合 |
+| 2025 | [SpaRC-AD: A Baseline for Radar-Camera Fusion in End-to-End Autonomous Driving](https://arxiv.org/abs/2508.10567) | 端到端 | - | - | [4D雷达] 端到端融合基线 |
 | 2025 | [Zfusion: An Effective Fuser of Camera and 4D Radar for 3D Object Perception in Autonomous Driving](https://arxiv.org/abs/2504.03438) | 3D检测 | - | - | [4D雷达] 有效融合器 |
 | 2025 | [Revisiting Radar Camera Alignment by Contrastive Learning](https://arxiv.org/abs/2504.02267) | 3D检测 | - | - | 对比学习对齐 |
 | 2025 | [HGSFusion: Radar-Camera Fusion with Hybrid Generation and Synchronization for 3D Object Detection](https://arxiv.org/abs/2412.11489) | 3D检测 | - | - | [4D雷达] 混合生成同步融合 |
-| 2025 | [Depth-aware Fusion Method based on Image and 4D Radar Spectrum](https://arxiv.org/abs/2502.10813) | 3D检测 | - | - | 深度感知融合 |
+| 2025 | [Depth-aware Fusion Method based on Image and 4D Radar Spectrum for 3D Object Detection](https://arxiv.org/abs/2502.15516) | 3D检测 | - | - | [4D雷达] 深度感知融合 |
 | 2023 | [RADIANT: Radar-Image Association Network for 3D Object Detection](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/longyunf/radiant) | [知乎](https://zhuanlan.zhihu.com/p/597739906) | 雷达-图像关联网络 |
 | 2023 | [CRAFT: Camera-Radar 3D Object Detection with Spatio-Contextual Fusion Transformer](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/581055339) | 空间-语义信息互补 |
 | 2022 | [A frustum proposal-based 3D object detection network for multi-stage fusion in autonomous driving](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/brandesjj/centerfusionpp) | [知乎](https://zhuanlan.zhihu.com/p/603398636) | 基于CenterFusion改进 |
