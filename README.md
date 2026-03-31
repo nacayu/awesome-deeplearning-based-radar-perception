@@ -60,7 +60,7 @@
 | 2025 | [SpaRC-AD: A Baseline for Radar-Camera Fusion in End-to-End Autonomous Driving](https://arxiv.org/abs/2508.03067) | 端到端 | - | - | 端到端融合基线 |
 | 2025 | [ZFusion: An Effective Fuser of Camera and 4D Radar](https://arxiv.org/abs/2504.03184) | 3D检测 | - | - | 有效融合器 |
 | 2025 | [Revisiting Radar Camera Alignment by Contrastive Learning](https://arxiv.org/abs/2504.02267) | 3D检测 | - | - | 对比学习对齐 |
-| 2025 | [HGSFusion: Radar-Camera Fusion with Hybrid Generation and Synchronization](https://arxiv.org/abs/2412.14459) | 3D检测 | - | - | 混合生成同步 |
+| 2025 | [HGSFusion: Radar-Camera Fusion with Hybrid Generation and Synchronization for 3D Object Detection](https://arxiv.org/abs/2412.11489) | 3D检测 | - | - | [4D雷达] 混合生成同步融合 |
 | 2025 | [Depth-aware Fusion Method based on Image and 4D Radar Spectrum](https://arxiv.org/abs/2502.10813) | 3D检测 | - | - | 深度感知融合 |
 | 2023 | [RADIANT: Radar-Image Association Network for 3D Object Detection](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/longyunf/radiant) | [知乎](https://zhuanlan.zhihu.com/p/597739906) | 雷达-图像关联网络 |
 | 2023 | [CRAFT: Camera-Radar 3D Object Detection with Spatio-Contextual Fusion Transformer](https://arxiv.org/) | 3D检测 | - | [知乎](https://zhuanlan.zhihu.com/p/581055339) | 空间-语义信息互补 |
