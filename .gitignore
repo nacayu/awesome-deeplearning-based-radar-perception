@@ -1,0 +1,8 @@
+# 私人脚本文件，不上传到GitHub
+cron_daily_update.sh
+update_papers.sh
+scripts/update_papers.py
+scripts/
+cron_update.log
+update.log
+*.log
