@@ -52,10 +52,8 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026 | [RadarXFormer: Robust Object Detection via Cross-Dimension Fusion of 4D Radar Spectra and Images for Autonomous Driving](https://arxiv.org/abs/2603.14822) | 3D检测 | - | - | [4D雷达] 跨维度融合4D雷达频谱与图像的鲁棒3D目标检测 |
 | 2026 | [Boosting Instance Awareness via Cross-View Correlation with 4D Radar and Camera for 3D Object Detection](https://arxiv.org/abs/2602.20632) | 3D检测 | - | - | [4D雷达] 通过跨视角相关性增强实例感知 |
-| 2026 | [R4Det: 4D Radar-Camera Fusion for High-Performance 3D Object Detection](https://arxiv.org/abs/2603.09805) | 3D检测 | - | - | [4D雷达] 高性能4D雷达-相机融合3D检测 |
 | 2026 | [Wavelet-based Multi-View Fusion of 4D Radar Tensor and Camera for Robust 3D Object Detection](https://arxiv.org/abs/2512.22972) | 3D检测 | - | - | [4D雷达] 基于小波的多视角融合 |
 | 2025 | [RadarMP: Motion Perception for 4D mmWave Radar in Autonomous Driving](https://arxiv.org/abs/2511.12117) | 3D检测 | - | - | [4D雷达] 4D毫米波雷达运动感知 |
-| 2025 | [All You Need for Object Detection: From Pixels, Points, and Prompts to Next-Gen Fusion and Multimodal LLMs](https://arxiv.org/abs/2510.10753) | 3D检测 | - | - | 多模态LLM融合 |
 | 2025 | [MLF-4DRCNet: Multi-Level Fusion with 4D Radar and Camera for 3D Object Detection in Autonomous Driving](https://arxiv.org/abs/2509.18613) | 3D检测 | - | - | [4D雷达] 多层级融合 |
 | 2025 | [SpaRC-AD: A Baseline for Radar-Camera Fusion in End-to-End Autonomous Driving](https://arxiv.org/abs/2508.10567) | 端到端 | - | - | [4D雷达] 端到端融合基线 |
 | 2025 | [Zfusion: An Effective Fuser of Camera and 4D Radar for 3D Object Perception in Autonomous Driving](https://arxiv.org/abs/2504.03438) | 3D检测 | - | - | [4D雷达] 有效融合器 |
@@ -75,21 +73,6 @@
 | 2021 | [TransFuser: Multi-Modal Fusion Transformer for End-to-End Autonomous Driving](https://arxiv.org/) | 路径预测 | [GitHub](https://github.com/autonomousvision/transfuser) | [知乎](https://zhuanlan.zhihu.com/p/508898376) | Transformer融合 |
 
 ### 2.3 4D雷达检测
-
-| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026 | [4D-CAAL: 4D Radar-Camera Calibration and Auto-Labeling for Autonomous Driving](https://arxiv.org/abs/2601.21454) | 标定 | - | - | 自动标注 |
-| 2026 | [Doracamom: Joint 3D Detection and Occupancy Prediction with Multi-view 4D Radars and Cameras for Omnidirectional Perception](https://arxiv.org/abs/2501.15394) | 检测+占用 | - | - | 全向感知 |
-| 2025 | [RQR3D: Reparametrizing the regression targets for BEV-based 3D object detection](https://arxiv.org/abs/2505.17732) | 3D检测 | - | - | 回归目标重参数化 |
-| 2025 | [Efficient On-Chip Implementation of 4D Radar-Based 3D Object Detection on Hailo-8L](https://arxiv.org/abs/2505.00757) | 3D检测 | - | - | 芯片实现 |
-| 2025 | [L2RDaS: Synthesizing 4D Radar Tensors for Model Generalization via Dataset Expansion](https://arxiv.org/abs/2503.03637) | 数据增强 | - | - | 数据集扩展 |
-| 2022 | [K-Radar: 4D Radar Object Detection for Autonomous Driving](https://arxiv.org/) | 3D检测 | [GitHub](https://github.com/kaist-avelab/k-radar) | - | 4D雷达，各种天气条件 |
-
-### 2.4 雷达+3DGS检测
-
-| 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 2025 | [RaGS: Unleashing 3D Gaussian Splatting from 4D Radar and Monocular Cues for 3D Object Detection](https://arxiv.org/abs/2507.19856) | 3D检测 | - | - | 3DGS+4D雷达 |
 
 ---
 
@@ -127,13 +110,6 @@
 
 | 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026 | [Video Generation Models as World Models: Efficient Paradigms, Architectures and Algorithms](https://arxiv.org/abs/2603.14125) | 世界模型 | - | - | 视频生成作为世界模型 |
-| 2026 | [Collision-Aware Vision-Language Learning for End-to-End Driving](https://arxiv.org/abs/2603.09746) | 端到端 | - | - | 碰撞感知VLM |
-| 2026 | [Toward Physically Consistent Driving Video World Models](https://arxiv.org/abs/2603.17249) | 世界模型 | - | - | 物理一致性 |
-| 2026 | [X-World: Controllable Ego-Centric Multi-Camera World Models](https://arxiv.org/abs/2603.08703) | 世界模型 | - | - | 多相机可控世界模型 |
-| 2026 | [DriveVLM-RL: Neuroscience-Inspired Reinforcement Learning with Vision-Language Models](https://arxiv.org/abs/2603.06328) | 强化学习 | - | - | 神经科学启发的RL |
-| 2026 | [VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs](https://arxiv.org/abs/2603.06820) | 世界模型 | - | - | 向量图扩散流 |
-| 2026 | [From Virtual Environments to Real-World Trials: Emerging Trends in Autonomous Driving](https://arxiv.org/abs/2603.04708) | 综述 | - | - | 虚拟到现实趋势 |
 
 ---
 
@@ -145,11 +121,7 @@
 | 2026 | [StreetForward: Perceiving Dynamic Street with Feedforward Causal Attention](https://arxiv.org/abs/2603.19552) | 动态场景 | - | - | 前馈因果注意力 |
 | 2026 | [Reconstruction Matters: Learning Geometry-Aligned BEV Representation through 3D Gaussian Splatting](https://arxiv.org/abs/2603.19193) | BEV表示 | - | - | 几何对齐BEV |
 | 2026 | [LiDAR-EVS: Enhance Extrapolated View Synthesis for 3D Gaussian Splatting with Pseudo-LiDAR Supervision](https://arxiv.org/abs/2603.14763) | 视图合成 | - | - | LiDAR监督 |
-| 2026 | [DynamicVGGT: Learning Dynamic Point Maps for 4D Scene Reconstruction](https://arxiv.org/abs/2603.04044) | 4D重建 | - | - | 动态点云图 |
-| 2026 | [ReconDrive: Fast Feed-Forward 4D Gaussian Splatting for Autonomous Driving](https://arxiv.org/abs/2603.03906) | 场景重建 | - | - | 前馈4DGS |
-| 2026 | [VG3S: Visual Geometry Grounded Gaussian Splatting for Semantic Occupancy Prediction](https://arxiv.org/abs/2603.05704) | 语义占用 | - | - | 几何 grounded |
-| 2026 | [Transforming Omnidirectional RGB-LiDAR data into 3D Gaussian Splatting](https://arxiv.org/abs/2603.05395) | 数据转换 | - | - | 全向数据转GS |
-| 2026 | [DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Rendering](https://arxiv.org/abs/2603.02789) | 重建+渲染 | - | - | 神经重建桥接 |
+
 
 ---
 
@@ -157,13 +129,8 @@
 
 | 年份 | 论文 | 任务 | 代码 | 中文解读 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026 | [Understanding Behavior Cloning with Action Quantization](https://arxiv.org/abs/2603.05887) | 行为克隆 | - | - | 动作量化 |
-| 2026 | [Utonia: Toward One Encoder for All Point Clouds](https://arxiv.org/abs/2603.03438) | 点云编码 | - | - | 统一点云编码器 |
+
 | 2025 | [VLA-R: Vision-Language Action Retrieval toward Open-World End-to-End Autonomous Driving](https://arxiv.org/abs/2511.12405) | 端到端 | - | - | [VLA] 开放世界端到端自动驾驶视觉语言动作检索 |
-| 2025 | [ADVEDM: Fine-grained Adversarial Attack against VLM-based Embodied Agents](https://arxiv.org/abs/2509.16645) | 对抗攻击 | - | - | VLM对抗攻击 |
-| 2025 | [TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models](https://arxiv.org/abs/2509.07962) | 机器人操作 | - | - | 力矩感知VLA |
-| 2025 | [Unified Vision-Language-Action Model](https://arxiv.org/abs/2403.19838) | 统一模型 | - | - | 统一VLA |
-| 2026 | [Out-of-Sight Embodied Agents: Multimodal Tracking, Sensor Fusion, and Trajectory Forecasting](https://arxiv.org/abs/2603.09719) | 多模态跟踪 | - | - | 具身智能体 |
 
 ---
 
