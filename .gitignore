@@ -1,4 +1,10 @@
-# 只保留README，其他全部忽略
+# Keep the curated README and maintenance tooling under version control.
 *
 !README.md
 !.gitignore
+!LICENSE
+!scripts/
+!scripts/check_links.py
+!.github/
+!.github/workflows/
+!.github/workflows/check-links.yml
